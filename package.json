@@ -1,0 +1,49 @@
+{
+  "name": "koa-typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "doc": "apidoc -i build/controller/ -o doc/",
+    "test": "jest",
+    "watch-server": "nodemon --watch 'src/**/*' -e ts, tsx --exec 'ts-node' ./src/server.ts"
+  },
+  "keywords": [],
+  "author": "ChangJoo Park <pcjpcj2@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apidoc": "^0.17.6",
+    "http": "0.0.0",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-cors": "0.0.16",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "mongoose": "^4.13.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "@types/koa": "^2.0.41",
+    "@types/koa-bodyparser": "^3.0.26",
+    "@types/koa-router": "^7.0.26",
+    "@types/mongoose": "^4.7.28",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
+    },
+    "testMatch": [
+      "**/test/*.(ts|js)"
+    ]
+  }
+}

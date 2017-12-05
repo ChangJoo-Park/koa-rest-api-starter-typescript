@@ -21,18 +21,18 @@
     "koa-json": "^2.0.2",
     "koa-logger": "^3.1.0",
     "koa-router": "^7.3.0",
-    "mongoose": "^4.13.5",
+    "mongoose": "^4.13.6",
     "socket.io": "^2.0.4"
   },
   "devDependencies": {
-    "@types/socket.io": "^1.4.31",
     "@types/jest": "^21.1.8",
-    "@types/koa": "^2.0.41",
+    "@types/koa": "^2.0.42",
     "@types/koa-bodyparser": "^3.0.26",
-    "@types/koa-router": "^7.0.26",
+    "@types/koa-router": "^7.0.27",
     "@types/mongoose": "^4.7.28",
+    "@types/socket.io": "^1.4.31",
     "jest": "^21.2.1",
-    "nodemon": "^1.12.1",
+    "nodemon": "^1.12.4",
     "ts-node": "^3.3.0",
     "typescript": "^2.6.2"
   },

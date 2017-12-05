@@ -39,7 +39,24 @@ server.on('listen', () => {
   console.log('Listening on ' + bind)
 })
 
+// Socket.io
+import * as Socket from 'socket.io'
+import { onRequestPush } from './socket'
+const io = Socket(server)
+
 // Router && Controller
 import { readdirToRouter } from './router'
 const router = readdirToRouter()
 app.use(router.routes())
+
+// Handle Router's socket requests
+/**
+ * See intruction inside socket/index.ts
+ */
+app.use((ctx, next) => {
+  if (ctx.state.push && ctx.state.push.action && ctx.state.push.data) {
+    console.log('has push!!')
+    onRequestPush(io, ctx, next)
+  }
+  next()
+})

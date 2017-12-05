@@ -26,32 +26,8 @@ mongoose.Promise = global.Promise
 mongoose.connect('mongodb://localhost:27017/app-data')
 
 // Router && Controller
-import fs = require('fs')
-import * as Router from 'koa-router'
-const router = new Router()
-
-function readdirToRouter(child = '') {
-  let path = `${__dirname}/controller${child ? `/${child}` : ''}`
-  fs.readdirSync(path).forEach((file) => {
-    let path = file.split('.')
-    let name = path[0]
-    if (path.length > 1) {
-      if (path[path.length - 1] === 'ts') {
-        let child_path = child ? `${child}/` : ''
-        let route = require(`./controller/${child_path}${name}`)
-        if (name === 'index') {
-          router.use(`/api/${child}`, route.routes(), route.allowedMethods())
-        } else {
-          router.use(`/api/${child_path}${name}`, route.routes(), route.allowedMethods())
-        }
-      }
-    } else {
-      readdirToRouter(file)
-    }
-  })
-}
-
-readdirToRouter()
+import { readdirToRouter } from './router'
+const router = readdirToRouter()
 app.use(router.routes())
 
 // server

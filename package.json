@@ -12,7 +12,6 @@
   "author": "ChangJoo Park <pcjpcj2@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@types/socket.io": "^1.4.31",
     "apidoc": "^0.17.6",
     "http": "0.0.0",
     "koa": "^2.4.1",
@@ -26,6 +25,7 @@
     "socket.io": "^2.0.4"
   },
   "devDependencies": {
+    "@types/socket.io": "^1.4.31",
     "@types/jest": "^21.1.8",
     "@types/koa": "^2.0.41",
     "@types/koa-bodyparser": "^3.0.26",

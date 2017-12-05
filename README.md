@@ -4,6 +4,7 @@
 - [x] Logging server with file and db
 - [x] Connect with MongoDB
 - [x] Automatically creating routes
+- [ ] Socket.io
 - [ ] Create document using api doc
 - [ ] RESTful API
 - [ ] JWT Authentication

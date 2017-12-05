@@ -25,10 +25,6 @@ import mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 mongoose.connect('mongodb://localhost:27017/app-data')
 
-// Router && Controller
-import { readdirToRouter } from './router'
-const router = readdirToRouter()
-app.use(router.routes())
 
 // server
 import http = require('http')
@@ -42,3 +38,8 @@ server.on('listen', () => {
     : 'port ' + addr.port
   console.log('Listening on ' + bind)
 })
+
+// Router && Controller
+import { readdirToRouter } from './router'
+const router = readdirToRouter()
+app.use(router.routes())

@@ -2,6 +2,9 @@ import koaRouter = require('koa-router')
 import { Context } from 'koa'
 const router = new koaRouter()
 
+/**
+ * @api {get} / Hello World
+ */
 router.get('/', async (ctx: Context, next: Function) => {
   console.log('hello')
   ctx.body = 'Hello World'

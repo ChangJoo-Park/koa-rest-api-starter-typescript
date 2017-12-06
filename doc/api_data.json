@@ -1,0 +1,12 @@
+[
+  {
+    "type": "get",
+    "url": "/",
+    "title": "Hello World",
+    "version": "0.0.0",
+    "filename": "src/controller/index.ts",
+    "group": "_mnt_e_Developments_koa_rest_api_starter_typescript_src_controller_index_ts",
+    "groupTitle": "_mnt_e_Developments_koa_rest_api_starter_typescript_src_controller_index_ts",
+    "name": "Get"
+  }
+]

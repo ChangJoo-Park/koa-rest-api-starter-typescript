@@ -60,3 +60,5 @@ app.use((ctx, next) => {
   }
   next()
 })
+
+module.exports = server

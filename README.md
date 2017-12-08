@@ -8,7 +8,7 @@
 - [x] base RESTful API 
 - [ ] Create document using api doc
 - [ ] JWT Authentication
-- [ ] Testing with JEST (with preprocessor)
+- [x] Testing with JEST (with preprocessor)
 - [x] Sample API Request Client (it needs VSCode [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)]
 
 ```

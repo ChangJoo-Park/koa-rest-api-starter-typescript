@@ -9,7 +9,7 @@
 - [ ] Create document using api doc
 - [ ] JWT Authentication
 - [ ] Testing with JEST (with preprocessor)
-- [ ] Sample API Request Client (it needs VSCode [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)]
+- [x] Sample API Request Client (it needs VSCode [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)]
 
 ```
 # Dev

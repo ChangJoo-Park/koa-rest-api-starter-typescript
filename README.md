@@ -5,11 +5,12 @@
 - [x] Connect with MongoDB
 - [x] Automatically creating routes
 - [x] Socket.io
-- [x] base RESTful API 
+- [x] base REST API 
 - [ ] Create document using api doc
 - [ ] JWT Authentication
 - [x] Testing with JEST (with preprocessor)
 - [x] Sample API Request Client (it needs VSCode [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)]
+- [x] Lint TSLint with Standard config
 
 ```
 # Dev

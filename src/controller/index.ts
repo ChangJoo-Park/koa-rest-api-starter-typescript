@@ -1,6 +1,6 @@
 import koaRouter = require('koa-router')
 import { Context } from 'koa'
-const router = new koaRouter()
+const router: koaRouter = new koaRouter()
 
 /**
  * @api {get} / Hello World

@@ -19,7 +19,7 @@ interface LogModel {
 const logger = (type: LogType, msg: any, url?: string) => {
   let date = new Date()
   // db
-  var log: LogModel = {
+  let log: LogModel = {
     url: url,
     time: new Date(),
     type: LogType[type],
@@ -40,7 +40,10 @@ msg: ${msg}
 	`)
 
   let path = `${__dirname}'/../../logs/${day}.log`
-  fs.readFile(path, (err, data: Buffer) => {
+  fs.readFile(path, (err: Error, data: Buffer) => {
+    if (err) {
+      console.log('error => ', err)
+    }
     if (!data) {
       fs.writeFileSync(path, buf)
     } else {

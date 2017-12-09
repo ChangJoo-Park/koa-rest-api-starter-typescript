@@ -4,7 +4,7 @@ import * as Socket from 'socket.io'
 const types = []
 
 /**
- * Context must has `state.push`. 
+ * Context must has `state.push`.
  * Using action type of push and data.
  * push: {
  *  action: '',

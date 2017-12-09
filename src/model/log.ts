@@ -5,7 +5,7 @@ const LogSchema = {
   type: String,
   msg: String,
   time: Date
-};
+}
 
 const Log = mongoose.model('Log', new mongoose.Schema(LogSchema))
 

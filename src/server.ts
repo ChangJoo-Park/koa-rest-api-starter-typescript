@@ -1,5 +1,5 @@
 import * as Koa from 'koa'
-const app = new Koa() 
+const app = new Koa()
 
 // Error Logger
 import { resBody, resError, resInfo } from './utils/response'
@@ -24,7 +24,6 @@ app.use(convert(logger()))
 import mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 mongoose.connect('mongodb://localhost:27017/app-data')
-
 
 // server
 import http = require('http')

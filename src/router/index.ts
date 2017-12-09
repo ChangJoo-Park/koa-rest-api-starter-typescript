@@ -10,12 +10,12 @@ export const readdirToRouter = (child = '') => {
     let name = path[0]
     if (path.length > 1) {
       if (path[path.length - 1] === 'ts') {
-        let child_path = child ? `${child}/` : ''
-        let route = require(`../controller/${child_path}${name}`)
+        let childPath: string = child ? `${child}/` : ''
+        let route = require(`../controller/${childPath}${name}`)
         if (name === 'index') {
           router.use(`/api/${child}`, route.routes(), route.allowedMethods())
         } else {
-          router.use(`/api/${child_path}${name}`, route.routes(), route.allowedMethods())
+          router.use(`/api/${childPath}${name}`, route.routes(), route.allowedMethods())
         }
       }
     } else {
